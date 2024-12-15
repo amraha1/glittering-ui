@@ -24,6 +24,13 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        cream: "#F5F5F5",
+        beige: "#E5E5E5",
+        textDark: "#1A1A1A",
+        // accent: "#8B7355",
+        // border: "hsl(var(--border))",
+        // background: "hsl(var(--background))",
+        // foreground: "hsl(var(--foreground))",
         jewelry: {
           background: "#f5f1ed",
           text: "#2a1a1d",

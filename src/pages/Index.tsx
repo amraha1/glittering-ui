@@ -3,7 +3,10 @@ import Hero from "../components/Hero";
 import ProductShowcase from "../components/ProductShowcase";
 import ProductFeature from "../components/ProductFeature";
 import PopularProducts from "../components/PopularProducts";
-
+import HeroSecondary from "../components/HeroSecondary"
+import HeroThird from "../components/HeroThird"
+import Blog from "../components/Blog"
+import Footer from "../components/Footer"
 const Index = () => {
   return (
     <div className="min-h-screen bg-jewelry-background">
@@ -12,6 +15,10 @@ const Index = () => {
       <ProductShowcase />
       <ProductFeature />
       <PopularProducts />
+      <HeroSecondary />
+      <Blog />
+      <HeroThird />
+      <Footer />
     </div>
   );
 };
