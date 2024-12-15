@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ProductShowcase from "../components/ProductShowcase";
+import ProductFeature from "../components/ProductFeature";
 
 const Index = () => {
   return (
@@ -8,6 +9,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <ProductShowcase />
+      <ProductFeature />
     </div>
   );
 };
