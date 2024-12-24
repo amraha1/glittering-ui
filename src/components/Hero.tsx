@@ -17,7 +17,7 @@ const Hero = () => {
               <div className="text-center">
                 <div className="relative w-full pt-[100%] rounded-full overflow-hidden mb-4">
                   <img
-                    src="/lovable-uploads/080df812-b2d7-4807-b0b1-6c3006ab8593.png"
+                    src="/lovable-uploads/imag1.png"
                     alt="Circle Earrings"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
@@ -27,7 +27,7 @@ const Hero = () => {
               <div className="text-center">
                 <div className="relative w-full pt-[100%] rounded-full overflow-hidden mb-4">
                   <img
-                    src="/lovable-uploads/080df812-b2d7-4807-b0b1-6c3006ab8593.png"
+                    src="/lovable-uploads/image5.jpg"
                     alt="Beautiful Rings"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
@@ -40,7 +40,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative w-full pt-[125%] rounded-full overflow-hidden">
               <img
-                src="/lovable-uploads/080df812-b2d7-4807-b0b1-6c3006ab8593.png"
+                src="/lovable-uploads/image3.jpg"
                 alt="Featured Jewelry"
                 className="absolute inset-0 w-full h-full object-cover"
               />

@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <h3 className="font-serif text-2xl">jewellryWear</h3>
-              <img src="/lovable-uploads/45d5411a-765a-40cf-99ce-d9230c8f6c71.png" alt="Logo" className="w-8 h-8" />
+              <img src="/lovable-uploads/logo.png" alt="Logo" className="w-8 h-8" />
             </div>
             <div className="space-y-4">
               <div>
@@ -60,7 +60,7 @@ const Footer = () => {
               <Input
                 type="email"
                 placeholder="mail@address.com"
-                className="bg-transparent border-b border-textDark/20 rounded-none px-0 focus-visible:ring-0"
+                className="bg-transparent border-b py-2 border-textDark/20 rounded-none px-2 focus-visible:ring-0"
               />
               <Button 
                 className="w-full justify-between bg-transparent text-textDark hover:bg-transparent hover:text-textDark/70 px-0 font-normal"

@@ -6,7 +6,7 @@ const ProductFeature = () => {
           <div className="relative">
             <div className="relative w-full pt-[100%] rounded-full overflow-hidden">
               <img
-                src="/lovable-uploads/dc728331-f71d-4809-b530-877bd1bbcc9f.png"
+                src="/lovable-uploads/earing2.png"
                 alt="Elegant Jewelry"
                 className="absolute inset-0 w-full h-full object-cover"
               />

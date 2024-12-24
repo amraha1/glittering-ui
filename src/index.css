@@ -6,7 +6,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+--background: #D9CFC2;
+    /* --background: 0 0% 100%; */
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -19,6 +20,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;
+    --accent2:88553A;
     --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -29,7 +31,8 @@
   }
  
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: #D9CFC2;
+    /* --background: 222.2 84% 4.9%; */
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -56,10 +59,34 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#D9CFC2] text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
+  }
+}
+
+.blob {
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  background: #E2D1C3;
+  opacity: 0.2;
+  position: absolute;
+  z-index: 0;
+  animation: blob 12s ease-in-out infinite;
+}
+
+@keyframes blob {
+  0% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+  33% {
+    border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+  66% {
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
+  100% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
   }
 }

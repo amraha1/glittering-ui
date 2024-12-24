@@ -1,13 +1,93 @@
 import React from 'react';
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Avatar } from "@/components/ui/avatar";
+import { FaQuoteLeft } from "react-icons/fa";
+interface Testimonial {
+  quote: string;
+  author: string;
+  location: string;
+  image: string;
+}
+
+const testimonials: Testimonial[] = [
+  {
+    quote: "Mauris faucibus ante quis arcu pellentesque congue. In faucibus ipsum vitae libero hendrerit volutpat. Semed quis mauris consequat, sollicitudin urna ac, mattis neque. Aenean purus ligula, condimentum id sapien quis, auctor.",
+    author: "Mary Gillis",
+    location: "BROOKLYN, NY",
+    image: "/lovable-uploads/james.jpg"
+  },
+  {
+    quote: "In faucibus ipsum vitae libero hendrerit volutpat. Semed quis mauris consequat, sollicitudin urna ac, mattis neque. Aenean purus ligula, condimentum id sapien quis.",
+    author: "John Smith",
+    location: "MANHATTAN, NY",
+    image: "/lovable-uploads/jon.jpg"
+
+  },
+  {
+    quote: "Semed quis mauris consequat, sollicitudin urna ac, mattis neque. Aenean purus ligula, condimentum id sapien quis, auctor et libero hendrerit.",
+    author: "Sarah Johnson",
+    location: "QUEENS, NY",
+    image: "/lovable-uploads/james.jpg"
+  }
+];
+
+ const Testimonials = () => {
+  return (
+    <section className="relative w-full max-w-6xl mx-auto px-4 py-20">
+      <div className="blob w-72 h-72 top-1/2 right-1/4 -translate-y-1/2" />
+      <FaQuoteLeft color='#88553A' size={39} className='mx-auto mb-14' />
+      <Carousel className="w-full max-w-4xl mx-auto">
+        <CarouselContent>
+          {testimonials.map((testimonial, index) => (
+            <CarouselItem key={index}>
+              <div className="flex flex-col items-center text-center space-y-8 px-4">
+                <div className="relative">
+                  <span className="absolute -top-8 left-1/2 -translate-x-1/2 text-primary text-6xl font-serif">"</span>
+                  <p className="text-xl md:text-2xl font-serif italic max-w-2xl mx-auto">
+                    {testimonial.quote}
+                  </p>
+                </div>
+                <div className="flex flex-row  space-y-4">
+                  <Avatar className="w-16 h-16">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.author}
+                      className="object-cover"
+                    />
+                  </Avatar>
+                  <div className="ml-[12px]">
+                    <h3 className="font-serif text-xl">{testimonial.author}</h3>
+                    <p className="text-[#88553A] font-bold text-sm tracking-wider">
+                      {testimonial.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        {/* <FaChevronLeft className="hidden md:flex -left-4 hover:bg-primary hover:text-primary-foreground" /> */}
+        <CarouselPrevious className="hidden md:flex -left-4 hover:bg-primary hover:text-primary-foreground" />
+        <CarouselNext className="hidden md:flex -right-4 hover:bg-primary hover:text-primary-foreground" />
+      </Carousel>
+    </section>
+  );
+};
 const Blog = () => {
   return (
-    <div className="min-h-screen mx-auto bg-cream">
+    <div className="min-h-screen mx-auto ">
       {/* Existing Hero Section */}
       <div className="p-8 md:p-16">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            {/* Left Column */}
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+             Left Column 
             <div className="relative">
               <img 
                 src="/lovable-uploads/3bc97b98-5448-4b0b-93cc-a887385fa6bc.png" 
@@ -22,7 +102,7 @@ const Blog = () => {
               </div>
             </div>
 
-            {/* Right Column */}
+          Right Column 
             <div className="space-y-8">
               <div className="bg-white/50 p-8 rounded-lg">
                 <h2 className="text-3xl md:text-4xl font-serif mb-4">
@@ -47,10 +127,11 @@ const Blog = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Testimonial Section */}
-          <div  className="max-w-2xl mx-auto text-center py-16">
+          <Testimonials />
+          {/* <div  className="max-w-2xl mx-auto text-center py-16">
             <div className="text-4xl font-serif text-textDark/80 mb-8">
               "
             </div>
@@ -70,7 +151,7 @@ const Blog = () => {
                 <p className="text-sm text-textDark/60">MANAGER</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Recent Blog Section */}
           <div className="py-16">
@@ -88,7 +169,7 @@ const Blog = () => {
               <div className="group">
                 <div className="overflow-hidden rounded-lg mb-4">
                   <img 
-                    src="/lovable-uploads/3bc97b98-5448-4b0b-93cc-a887385fa6bc.png"
+                    src="/lovable-uploads/image7.jpg"
                     alt="Never miss the moments"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -106,7 +187,7 @@ const Blog = () => {
               <div className="group">
                 <div className="overflow-hidden rounded-lg mb-4">
                   <img 
-                    src="/lovable-uploads/3bc97b98-5448-4b0b-93cc-a887385fa6bc.png"
+                    src="/lovable-uploads/image6.jpg"
                     alt="Style by yourself collection"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -124,7 +205,7 @@ const Blog = () => {
               <div className="group">
                 <div className="overflow-hidden rounded-lg mb-4">
                   <img 
-                    src="/lovable-uploads/3bc97b98-5448-4b0b-93cc-a887385fa6bc.png"
+                    src="/lovable-uploads/image8.jpg"
                     alt="Our unique keys to gold"
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -147,7 +228,7 @@ const Blog = () => {
           </div>
 
           {/* Bottom Section */}
-          <div className="bg-white/50 p-8 rounded-lg">
+          {/* <div className=" p-8 rounded-lg">
             <h3 className="text-2xl font-serif mb-4">
               Something shiny, everything you
             </h3>
@@ -161,7 +242,7 @@ const Blog = () => {
                            hover:bg-textDark/90 transition-colors">
               Get started
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative bg-jewelry-background">
-      <div className="bg-jewelry-text text-white text-sm py-2">
+      <div style={{background:'#CFC5B8'}} className="bg-[#CFC5B8]-text text-[#696968] text-sm py-2">
         <p className="text-center">Black Friday | Hundreds of brands, up to 50% off!</p>
       </div>
       

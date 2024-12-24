@@ -14,7 +14,7 @@ const ProductShowcase = () => {
           <div className="text-center">
             <div className="relative w-full pt-[100%] rounded-full overflow-hidden mb-6">
               <img
-                src="/lovable-uploads/d526693c-534b-4cfa-963b-87ad74946292.png"
+                src="/lovable-uploads/locket.jpg"
                 alt="Neck Locket"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -28,7 +28,7 @@ const ProductShowcase = () => {
           <div className="text-center">
             <div className="relative w-full pt-[100%] rounded-full overflow-hidden mb-6">
               <img
-                src="/lovable-uploads/d526693c-534b-4cfa-963b-87ad74946292.png"
+                src="/lovable-uploads/imag1.png"
                 alt="Earrings"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -42,7 +42,7 @@ const ProductShowcase = () => {
           <div className="text-center">
             <div className="relative w-full pt-[100%] rounded-full overflow-hidden mb-6">
               <img
-                src="/lovable-uploads/d526693c-534b-4cfa-963b-87ad74946292.png"
+                src="/lovable-uploads/breslet.jpg"
                 alt="Wrist Breslet"
                 className="absolute inset-0 w-full h-full object-cover"
               />

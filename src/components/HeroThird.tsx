@@ -3,16 +3,17 @@ import { Button } from './ui/button';
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-16 bg-cream">
+    <div className="mx-[10%] grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-16 ">
       <div className="rounded-lg overflow-hidden">
         <img 
-          src="/lovable-uploads/a4d7174a-9814-4a16-b526-fd8b6fad0949.png"
+          src="/lovable-uploads/imag1.png"
           alt="Jewelry model"
-          className="w-full h-[500px] object-cover"
+          style={{borderStartEndRadius:'40%', borderStartStartRadius:'45%', borderRadius:'45% 45% 0 0'}}
+          className="w-full h-[600px] object-cover "
         />
       </div>
       <div className="space-y-6 px-4 md:px-8">
-        <p className="text-sm uppercase tracking-wider text-textDark/60">UNIQUE, AS YOU</p>
+        <p className="text-sm uppercase tracking-wider font-extrabold text-[#9F7760]">UNIQUE, AS YOU</p>
         <h1 className="text-4xl md:text-5xl font-serif text-textDark">
           Brilliance for your shine
         </h1>
